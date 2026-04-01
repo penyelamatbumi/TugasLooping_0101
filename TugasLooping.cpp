@@ -123,5 +123,37 @@ void inputNumber();
 void displayResult(int type);
 void showMenu();
 
+int main()
+{
+    bool running = true;
+
+    while (running)
+    {
+        showMenu();
+        cin >> pilihan;
+
+        switch (pilihan)
+        {
+        case 1:
+            inputNumber();
+            displayResult(1);
+            break;
+        case 2:
+            inputNumber();
+            displayResult(2);
+            break;
+        case 0:
+            cout << "Keluar dari program. Terima kasih!" << endl;
+            running = false;
+            break;
+        default:
+            cout << "Pilihan tidak valid. Silakan coba lagi." << endl;
+            break;
+        }
+        cout << endl;
+    }
+    return 0;
+}
+
 
 
