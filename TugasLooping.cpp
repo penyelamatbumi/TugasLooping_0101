@@ -295,6 +295,33 @@ bool isFibonacci(int num)
     return (a == num);
 }
 
+void displayResult(int type)
+{
+    if (type == 1)
+    {
+        if (isPrime(n))
+            cout << n << " adalah bilangan prima." << endl;
+        else
+            cout << n << " BUKAN bilangan prima." << endl;
+    }
+    else
+    {
+        if (isFibonacci(n))
+            cout << n << " termasuk dalam deret Fibonacci." << endl;
+        else
+            cout << n << " BUKAN bagian dari deret Fibonacci." << endl;
+    }
+}
+
+void showMenu()
+{
+    cout << "=== PROGRAM PENGECEK BILANGAN ===" << endl;
+    cout << "1. Cek Bilangan Prima" << endl;
+    cout << "2. Cek Bilangan Fibonacci" << endl;
+    cout << "0. Keluar" << endl;
+    cout << "Pilih menu: ";
+}
+
 
 
 
